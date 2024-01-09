@@ -11,7 +11,7 @@ const projectData = [
     title: 'Portfolio Website',
     description:
       'My Portfolio: A Display of My Professional Projects and Achievements.',
-    image: '/images/projects/portfolio.png',
+    image: '/images/projects/portfolio.webp',
     tag: ['All', 'Web'],
     git: 'https://github.com/hbnker31/portfolio',
     preview: 'https://www.webdevbyhemant.com/',
@@ -22,7 +22,7 @@ const projectData = [
     title: 'Blogging Website',
     description:
       'A dynamic blogging platform showcasing a variety of engaging topics and thoughtful insights',
-    image: '/images/projects/blog.png',
+    image: '/images/projects/blog.webp',
     tag: ['All', 'Web'],
     git: 'https://github.com/hbnker31/myblog',
     preview: 'https://blogs.webdevbyhemant.com/',
@@ -33,7 +33,7 @@ const projectData = [
     title: 'AI SAAS Tools',
     description:
       'My Portfolio: A Display of My Professional Projects and Achievements.',
-    image: '/images/projects/ai_saas.png',
+    image: '/images/projects/ai_saas.webp',
     tag: ['All', 'Web'],
     git: '/',
     preview: '/',

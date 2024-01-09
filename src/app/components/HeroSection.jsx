@@ -57,6 +57,7 @@ export default function HeroSection() {
               alt="hero-image"
               width={300}
               height={300}
+              priority={true}
             />
           </div>
         </motion.div>
