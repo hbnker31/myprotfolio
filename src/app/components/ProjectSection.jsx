@@ -11,10 +11,10 @@ const projectData = [
     title: 'Portfolio Website',
     description:
       'My Portfolio: A Display of My Professional Projects and Achievements.',
-    image: '/images/projects/1.png',
+    image: '/images/projects/portfolio.png',
     tag: ['All', 'Web'],
-    git: '/',
-    preview: '/',
+    git: 'https://github.com/hbnker31/portfolio',
+    preview: 'https://www.webdevbyhemant.com/',
     status: true,
   },
   {
@@ -22,9 +22,9 @@ const projectData = [
     title: 'Blogging Website',
     description:
       'A dynamic blogging platform showcasing a variety of engaging topics and thoughtful insights',
-    image: '/images/projects/1.png',
+    image: '/images/projects/blog.png',
     tag: ['All', 'Web'],
-    git: '/',
+    git: 'https://github.com/hbnker31/myblog',
     preview: 'https://blogs.webdevbyhemant.com/',
     status: true,
   },
@@ -33,18 +33,7 @@ const projectData = [
     title: 'AI SAAS Tools',
     description:
       'My Portfolio: A Display of My Professional Projects and Achievements.',
-    image: '/images/projects/1.png',
-    tag: ['All', 'Web'],
-    git: '/',
-    preview: '/',
-    status: false,
-  },
-  {
-    id: 4,
-    title: 'Burger Ordering App',
-    description:
-      'Convenient and user-friendly app designed for seamless burger ordering, offering a delicious variety of options at your fingertips.',
-    image: '/images/projects/1.png',
+    image: '/images/projects/ai_saas.png',
     tag: ['All', 'Web'],
     git: '/',
     preview: '/',
