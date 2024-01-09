@@ -1,0 +1,107 @@
+'use client';
+
+import React, { useState, useRef } from 'react';
+import ProjectCard from './ProjectCard';
+import ProjectTag from './ProjectTag';
+import { motion, useInView } from 'framer-motion';
+
+const projectData = [
+  {
+    id: 1,
+    title: 'Portfolio Website',
+    description:
+      'My Portfolio: A Display of My Professional Projects and Achievements.',
+    image: '/images/projects/1.png',
+    tag: ['All', 'Web'],
+    git: '/',
+    preview: '/',
+    status: true,
+  },
+  {
+    id: 2,
+    title: 'Blogging Website',
+    description:
+      'A dynamic blogging platform showcasing a variety of engaging topics and thoughtful insights',
+    image: '/images/projects/1.png',
+    tag: ['All', 'Web'],
+    git: '/',
+    preview: 'https://blogs.webdevbyhemant.com/',
+    status: true,
+  },
+  {
+    id: 3,
+    title: 'AI SAAS Tools',
+    description:
+      'My Portfolio: A Display of My Professional Projects and Achievements.',
+    image: '/images/projects/1.png',
+    tag: ['All', 'Web'],
+    git: '/',
+    preview: '/',
+    status: false,
+  },
+  {
+    id: 4,
+    title: 'Burger Ordering App',
+    description:
+      'Convenient and user-friendly app designed for seamless burger ordering, offering a delicious variety of options at your fingertips.',
+    image: '/images/projects/1.png',
+    tag: ['All', 'Web'],
+    git: '/',
+    preview: '/',
+    status: false,
+  },
+];
+
+export default function ProjectSection() {
+  const [tag, setTag] = useState('All');
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+
+  const handleTagChange = (newTag) => {
+    setTag(newTag);
+  };
+
+  const filteredProjects = projectData.filter((project) =>
+    project.tag.includes(tag),
+  );
+
+  const cardVariants = {
+    initial: {
+      y: 50,
+      opacity: 0,
+    },
+    animate: { y: 0, opacity: 1 },
+  };
+  return (
+    <section className="flex flex-col gap-10" id="projects">
+      <h2 className="text-white text-4xl text-center font-bold ">
+        My Projects
+      </h2>
+      <div className="text-white flex flex-row gap-6 items-center justify-center">
+        <ProjectTag onClick={handleTagChange} name="All" tag={tag} />
+        <ProjectTag onClick={handleTagChange} name="Web" tag={tag} />
+      </div>
+      <ul className="grid md:grid-cols-3 gap-8 md:gap-12" ref={ref}>
+        {filteredProjects.map((project, index) => (
+          <motion.li
+            key={`${project.title}_${project.id} `}
+            variants={cardVariants}
+            initial="initial"
+            animate={isInView ? 'animate' : 'initial'}
+            transition={{ duration: 0.3, delay: index * 0.2 }}
+          >
+            <ProjectCard
+              imageUrl={project.image}
+              title={project.title}
+              description={project.description}
+              tags={project.tag}
+              git={project.git}
+              preview={project.preview}
+              status={project.status}
+            />
+          </motion.li>
+        ))}
+      </ul>
+    </section>
+  );
+}

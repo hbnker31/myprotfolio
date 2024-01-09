@@ -2,11 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  @keyframes gradientChange {
+      0% {
+          background-position: 0%
+      }
+
+      50% {
+          background-position: 100%
+      }
+
+      100% {
+          background-position: 0%
+      }
+  }
+
+  .gradient {
+   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)); 
+    background-color: #7C3AED; 
+    background-color: #3B82F6;     
+    background-size: 200% 200%;
+  }
+
+  .element-to-rotate {
+      animation: gradientChange 2s ease infinite;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+
+section {
+  padding-top: 80px;      /* Adjust this value to match your navbar's height */
+  margin-top: -80px;      /* Same as above, but negative */
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
