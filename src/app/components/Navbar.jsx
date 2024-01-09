@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 border border-borderp right-0 z-10 bg-bgs bg-opacity-100">
-      <div className="flex flex-wrap items-center justify-between mx-auto p-4 lg:py-4">
+      <div className="flex flex-wrap items-center justify-between mx-auto px-4 ">
         <Link
           href={'/'}
           className=" text-2xl md:text-5xl text-white font-semibold"

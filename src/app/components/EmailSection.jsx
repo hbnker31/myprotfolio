@@ -40,10 +40,10 @@ export default function EmailSection() {
           {`Interested in collaborating or have an opportunity to discuss? Reach out to me via email – I'm always open to new and exciting ventures!`}
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="">
+          <Link href="https://github.com/hbnker31">
             <Image src={GithubIcon} alt="githubIcon" />
           </Link>
-          <Link href="">
+          <Link href="https://www.linkedin.com/in/hemantbhankhar/">
             <Image src={LinkedInIcon} alt="linkedIcon" />
           </Link>
         </div>
