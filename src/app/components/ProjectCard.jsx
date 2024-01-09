@@ -1,6 +1,7 @@
 import React from 'react';
 import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function ProjectCard({
   imageUrl,
@@ -12,10 +13,10 @@ export default function ProjectCard({
 }) {
   return (
     <div>
-      <div
-        className="h-52 md:h-72 rounded-t-xl group relative "
-        style={{ background: `url(${imageUrl})`, backgroundSize: 'cover' }}
-      >
+      <div className="h-52 md:h-72 rounded-t-xl group relative ">
+        <div className="absolute h-52 md:h-72 top-0 left-0 right-0 ">
+          <Image src={imageUrl} alt="thumbnail" fill objectFit="cover" />
+        </div>
         {status ? (
           <div className="overlay  items-center justify-center absolute top-0 left-0 w-full h-full bg-bgp bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all  gap-10 duration-500">
             <></>
