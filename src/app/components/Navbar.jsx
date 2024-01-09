@@ -37,6 +37,7 @@ export default function Navbar() {
         <div className="mobile-menu block md:hidden">
           {navbarOpen ? (
             <button
+            aria-label="xmark"
               onClick={() => setNavbarOpen(false)}
               className="text-slate-200 flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white :hover:border-white"
             >
@@ -44,6 +45,7 @@ export default function Navbar() {
             </button>
           ) : (
             <button
+            aria-label="bars"
               onClick={() => setNavbarOpen(true)}
               className="text-slate-200 flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white :hover:border-white"
             >

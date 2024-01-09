@@ -15,7 +15,7 @@ export default function TabButton({ active, selectTab, children }) {
       <motion.div
         animate={active ? 'active' : 'default'}
         variants={variants}
-        className="h-1 bg-primary-500 mt-2"
+        className="h-1 bg-primary-600 mt-2"
       ></motion.div>
     </button>
   );

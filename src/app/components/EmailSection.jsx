@@ -58,7 +58,7 @@ export default function EmailSection() {
               Your email
             </label>
             <input
-              className="bg-bge border border-borderp placeholder-placeholder text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              className="bg-bge border border-borderp placeholder-placeholder text-white text-sm rounded-lg block w-full p-2.5"
               type="email"
               name="email"
               id="email"
@@ -74,7 +74,7 @@ export default function EmailSection() {
               Subject
             </label>
             <input
-              className="bg-bge border border-borderp placeholder-placeholder text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              className="bg-bge border border-borderp placeholder-placeholder text-white text-sm rounded-lg block w-full p-2.5"
               type="text"
               name="subject"
               id="subject"
@@ -90,7 +90,7 @@ export default function EmailSection() {
               Message
             </label>
             <textarea
-              className="bg-bge border border-borderp placeholder-placeholder text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              className="bg-bge border border-borderp placeholder-placeholder text-white text-sm rounded-lg block w-full p-2.5"
               type="text"
               name="message"
               id="message"
@@ -101,7 +101,7 @@ export default function EmailSection() {
           </div>
           <button
             type="submit"
-            className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+            className="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2.5 px-5 rounded-lg w-full"
           >
             Send Message
           </button>
