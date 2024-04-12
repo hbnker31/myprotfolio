@@ -32,7 +32,7 @@ const projectData = [
     id: 3,
     title: 'AI SAAS Tools',
     description:
-      'My Portfolio: A Display of My Professional Projects and Achievements.',
+      'An AI SaaS tool that combines conversational intelligence with advanced image generation capabilities',
     image: '/images/projects/ai_saas.webp',
     tag: ['All', 'Web'],
     git: '/',
